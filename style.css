@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poiret+One&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter+Tight:wght@500&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter+Tight:wght@500&family=Satisfy&family=Yeseva+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 300;
+    color: rgb(26, 24, 23);
+}
+
+body {
+    min-height: 1000px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 125vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img1.jpg);
+    background-size: cover;
+}
+
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+    gap: 30px;
+
+}
+
+.banner .content h2 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.banner .content p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.btn {
+    align-items: center;
+    font-size: 1rem;
+    color: rgb(243, 238, 238);
+    background: #e7447b;
+    display: inline-block;
+    padding: 15px 40px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    
+}
+
+.btn:hover {
+    letter-spacing: 6px;
+    background-color: #000000;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+header .logo { 
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    gap: 30px;
+}
+
+header.sticky .logo {
+    color: #1e1b1b;
+}
+header .logo span {
+    color: #eb2869;
+}
+
+header .navegation {
+    position: relative;
+    display: flex;
+}
+header .navegation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navegation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header.sticky .navegation li a {
+    color: #ed2f7e;
+}
+
+header .navegation li a:hover {
+    color: #e64d8f;
+}
+
+section {
+    padding: 100px;
+}
+
+
+
+
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.row .col150 {
+    position: relative;
+    width: 48%;
+    
+    
+}
+
+.titletext  {
+    color: #131212;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: 'Yeseva One';
+    gap: 40px;
+}
+
+.title p {
+    gap: 40px;
+}
+
+.sobre p {
+    font-family: 'Inter Tight';
+    color: #111;
+    font-size: 20px;
+    
+
+}
+
+.titletext span {
+    color: #ea2182;
+    font-weight: 700;
+    font-size: 1.5em;
+
+}
+
+.row .col150 .imgbx {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.row .col150 .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 50%;
+    object-fit: cover;
+    
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.especialidades {
+    background-color: #f3e6ec;
+    background-size: cover;    
+}
+
+
+
+.especialidades .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    max-width: 1200px;
+    
+}
+
+.content .flip {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    margin: 30px;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    perspective: 800px;
+}
+
+.flip:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+    
+}
+
+.boxfrente, .boxtras, .boxfrente2, .boxtras2, .boxfrente3, .boxtras3, .boxfrente4, .boxtras4, .boxfrente5, .boxtras5, .boxfrente6, .boxtras6 {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+
+}
+
+.boxfrente {
+    background-image: url(baixados\ \(1\).jpg);
+    background-size: 360px;
+}
+.boxfrente2 {
+    background-image: url(_Hairdresser\ Dyeing\ Girl\'s\ Hair_\ by\ Stocksy\ Contributor\ _Milles\ Studio_.jpg);
+    background-size: 360px;
+}
+
+.boxfrente3 {
+    background-image: url(Close-up\ do\ cabeleireiro\ cortando\ o\ cabelo\ dos\ clientes\ no\ salão\ de\ beleza\,\ cortando\ o\ cabelo\ com\ tesoura\ _\ Foto\ Premium.jpg);
+    background-size: 360px;
+}
+.boxfrente4 {
+    background-image: url(Estilista\ haciendo\ los\ toques\ finales\ _\ Foto\ Premium.jpg);
+    background-size: 360px;
+}
+.boxfrente5 {
+    background-image: url(Barbearia.jpg);
+    background-size: 360px;
+}
+.boxfrente6 {
+    background-image: url(Pink\ French\ Press\ on\ Nails\ Gel\ \ Reusable\ Nude\ Crystal\ \ Fake\ -\ Etsy.png);
+    background-size: 360px;
+}
+
+.boxtras  {
+    background-color: #090909;
+    transform: rotateY(180deg);
+    
+}
+
+.boxtras2 {
+    background-color: #000000;
+    transform: rotateY(180deg);
+    
+}
+
+.boxtras3 {
+    background-color: #000000;
+    transform: rotateY(180deg);
+    
+}
+
+.boxtras4 {
+    background-color: #000000;
+    transform: rotateY(180deg);
+    
+}
+.boxtras5 {
+    background-color: #000000;
+    transform: rotateY(180deg);
+    
+}
+.boxtras6  {
+    background-color: #000000;
+    transform: rotateY(180deg);
+    
+}
+
+.boxtras .boxtras2 .boxtras3 .boxtras4 .boxtras5 .boxtras6 p {
+    color: #e7447b;
+}
+
+.content .flip p {
+    color: #e7447b;
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Funcionarios{
+    background-color: #ffffff;
+    background-size: cover;
+
+}
+
+.Funcionarios .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.Funcionarios .content .box {
+    width: 260px;
+    margin: 15px;
+    
+}
+
+.Funcionarios .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    
+}
+
+.Funcionarios .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.Funcionarios .content .box .text {
+    padding: 15px 0 5px;
+    gap: 10px;
+}
+.Funcionarios .content .box .text h3 {
+    font-weight: 400;
+    color: #f20a67;
+    font-family: 'Yeseva One';
+    text-align: center;
+   
+}
+.Funcionarios .title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.avalia {
+    background-color: #f8f7f7;
+    background-size: cover;
+}
+
+.white .titletext, .white p {
+    color: #000000;
+}
+
+.avalia .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.avalia .content .box{
+    width: 340px;
+    margin: 40px;
+    padding: 40px;
+    background: #efdce2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.avalia .content .box .imgBx {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+.avalia .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avalia .content .box .text {
+    text-align: center;
+
+}
+
+.avalia .content .box .text p {
+    color: #252424;
+    font-style: initial;
+    font-family: 'Poiret One';
+}
+
+.avalia .content .box .text h3{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #111;
+    font-weight: 600;
+    font-family: 'Satisfy';
+}
+.avalia .title white {
+    gap: 30px;
+}
+
+.contatos {
+    background: url(img1.jpg);
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.contatos p {
+    color: #ffffff;
+}
+.contatoss {
+    padding: 60px 50px;
+    background: #f3a9c2;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.01);
+    border-radius: 10px;
+    max-width: 500px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+
+.contatoss h3 {
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+    margin-top: 50px;
+    font-family: 'Yeseva One';
+    gap: 30px;
+}
+.contatoss .inputbox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contatoss .inputbox input, 
+.contatoss .inputbox textarea {
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+    gap: 30px;
+}
+
+.img3 {
+    position: absolute;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    top: 60px;
+    flex-wrap: wrap;
+    align-items: right;
+    right: 0;
+    left: 0;
+    bottom: 300px;
+    left: 800px;
+    border-radius: 60%;
+        
+}
+
+.contatoss .inputbox input[type="submit"] {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}   
+
+.contatoss .inputbox input[type="submit"]:hover{
+    font-size: 1em;
+    color: #fff;
+    background: #0a0a0a;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.Copyrighttext {
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+    background-color: #000000;
+}
+.Copyrighttext p {
+    color: #ffffff;
+
+}
+
+.Copyrighttext a {
+    color: #f450aa;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width: 991px){
+    header, header.sticky 
+    {
+        padding: 10px 20px;
+    }
+    header .navegation
+    {
+        display: none;
+    
+    }
+
+    header .navegation.active {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .navegation li {
+        margin-left: 0;
+    }
+
+    header .navegation li a {
+        color: #111;
+        font-size: 1.6em;
+    }
+
+    .menuToggle 
+    {
+        position: relative;
+        width: 160px;
+        height: 60px;
+        background: url(menu.jpg);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active 
+    {
+        background: url(wrong.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle 
+    {
+        filter: invert(1);
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .banner .content h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col150{
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col150 .imgBx {
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .row .col150 .imgBx img {
+        max-width: 85%;
+    }
+
+    .especialidades .content {
+        margin-top: 20px;
+    }
+    .especialidades .content .box {
+        margin: 10px;
+    }
+    .especialidades .content .box .imgBx {
+        position: relative;
+        width: 100%;
+        height: 260px;
+    }
+    .titletext {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .avalia .content .box {
+        width: 340px;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .contatos {
+        background-size: 100%;
+    }
+
+    .contatoss {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+}
+
+@media(max-width: 480px)
+{
+    .banner .content h2 {
+        font-size: 2.2em;
+        color: #fff;
+    }
+}
