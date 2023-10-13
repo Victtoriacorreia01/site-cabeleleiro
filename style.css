@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poiret+One&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter+Tight:wght@500&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter+Tight:wght@500&family=Satisfy&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -26,8 +27,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(img1.jpg);
+    background: url(https://i.imgur.com/P193sBg.jpg);
     background-size: cover;
+    font-family: 'Mooli';
 }
 
 .banner .content {
@@ -38,8 +40,13 @@ body {
 }
 
 .banner .content h2 {
-    font-size: 5rem;
+    font-size: 5.3rem;
     color: #fff;
+}
+
+.banner .content h3 {
+    font-size: 1.3rem;
+    color: #ee3973;
 }
 
 .banner .content p {
@@ -59,6 +66,7 @@ body {
     text-decoration: none;
     letter-spacing: 2px;
     transition: 0.5s;
+    border-radius: 20px;
     
 }
 
@@ -246,28 +254,28 @@ section {
 }
 
 .boxfrente {
-    background-image: url(baixados\ \(1\).jpg);
+    background-image: url(https://i.imgur.com/6r5aExt.jpg);
     background-size: 360px;
 }
 .boxfrente2 {
-    background-image: url(_Hairdresser\ Dyeing\ Girl\'s\ Hair_\ by\ Stocksy\ Contributor\ _Milles\ Studio_.jpg);
+    background-image: url(https://i.imgur.com/rMgsThi.jpg);
     background-size: 360px;
 }
 
 .boxfrente3 {
-    background-image: url(Close-up\ do\ cabeleireiro\ cortando\ o\ cabelo\ dos\ clientes\ no\ salão\ de\ beleza\,\ cortando\ o\ cabelo\ com\ tesoura\ _\ Foto\ Premium.jpg);
+    background-image:url(https://i.imgur.com/PFkBnSv.jpg);
     background-size: 360px;
 }
 .boxfrente4 {
-    background-image: url(Estilista\ haciendo\ los\ toques\ finales\ _\ Foto\ Premium.jpg);
+    background-image: url(https://i.imgur.com/RswSVB9.jpg);
     background-size: 360px;
 }
 .boxfrente5 {
-    background-image: url(Barbearia.jpg);
+    background-image: url(https://i.imgur.com/1lvYKzw.jpg);
     background-size: 360px;
 }
 .boxfrente6 {
-    background-image: url(Pink\ French\ Press\ on\ Nails\ Gel\ \ Reusable\ Nude\ Crystal\ \ Fake\ -\ Etsy.png);
+    background-image: url(https://i.imgur.com/de77vCK.jpg);
     background-size: 360px;
 }
 
@@ -306,15 +314,16 @@ section {
 }
 
 .boxtras .boxtras2 .boxtras3 .boxtras4 .boxtras5 .boxtras6 p {
-    color: #e7447b;
+    color: #000000;
 }
 
 .content .flip p {
-    color: #e7447b;
-    font-size: 15px;
+    color: #fb3883;
+    font-size: 25px;
     align-items: center;
     display: flex;
     justify-content: center;
+    font-family: 'Croissant One';
 }
 
 
@@ -362,8 +371,18 @@ section {
 .Funcionarios .content .box .text h3 {
     font-weight: 400;
     color: #f20a67;
+    font-family: 'Croissant One';
+    text-align: center;
+    cursor: pointer;
+   
+}
+
+.Funcionarios .content .box .text h3:hover {
+    font-weight: 400;
+    color: #000000;
     font-family: 'Yeseva One';
     text-align: center;
+    cursor: pointer;
    
 }
 .Funcionarios .title{
@@ -452,10 +471,10 @@ section {
     color: #ffffff;
 }
 .contatoss {
-    padding: 60px 50px;
-    background: #f3a9c2;
+    padding: 40px 30px;
+    background: #f3c7d6;
     box-shadow: 0 15px 50px rgba(0,0,0,0.01);
-    border-radius: 10px;
+    border-radius: 20px;
     max-width: 500px;
     margin-top: 60px;
     display: flex;
@@ -464,17 +483,19 @@ section {
     align-items: center;
     position: relative;
     text-align: center;
+
 }
 
 
 .contatoss h3 {
-    color: #111;
-    font-size: 1.2em;
+    color: #fe2571;
+    font-size: 1.6em;
     margin-bottom: 20px;
     font-weight: 500;
     margin-top: 50px;
-    font-family: 'Yeseva One';
+    font-family: 'Croissant One';
     gap: 30px;
+    line-height: 70px;
 }
 .contatoss .inputbox {
     position: relative;
@@ -483,6 +504,7 @@ section {
     text-align: center;
     display: flex;
     justify-content: center;
+    border-radius: 20px;
     
 }
 
@@ -527,7 +549,8 @@ section {
     transition: 0.5s;
     max-width: 100px;
     font-weight: 500;
-    border: none;
+    border-radius: 30px;
+    border-color: #ff0157;
     cursor: pointer;
 }   
 
@@ -545,6 +568,8 @@ section {
     border: none;
     cursor: pointer;
 }
+
+
 
 .Copyrighttext {
     padding: 8px 40px;
@@ -584,7 +609,7 @@ section {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background: #fff;
+        background: #fcfcfc;
     }
 
     header .navegation li {
@@ -601,16 +626,17 @@ section {
         position: relative;
         width: 160px;
         height: 60px;
-        background: url(menu.jpg);
+        background: url(https://i.imgur.com/ovZnJHP.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
     }
 
+
     .menuToggle.active 
     {
-        background: url(wrong.png);
+        background: url(https://i.imgur.com/jrdxUhN.png);
         background-size: 25px;
         background-repeat: no-repeat;
         background-position: center;
@@ -624,10 +650,29 @@ section {
         padding: 20px;
     }
 
+    .banner {
+        position: relative;
+        width: 100%;
+        min-height: 125vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(https://i.imgur.com/Jm2RwuH.jpg);
+        background-size: cover;
+        font-family: 'Croissant One';
+    }
+
     .banner .content h2 {
         font-size: 3em;
-        color: #fff;
+        color: #ffffff;
     }
+
+    
+    .banner .content p {
+        
+        color: #ffffff;
+    }
+
 
     .row {
         flex-direction: column;
